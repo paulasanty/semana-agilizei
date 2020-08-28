@@ -35,7 +35,7 @@ context('Cadastro', () => {
         cy.get('select#Skills').select('Javascript');
         cy.get('select#countries').select('Australia');
         cy.get('select#country').select('India', {force: true})
-        cy.get('select#yearbox').select(chance.year({min: 1917, max: 2015}));
+        cy.get('select#yearbox').select(chance.year({min: 1916, max: 2015}));
         cy.get('select[placeholder="Month"]').select(faker.date.month());
         cy.get('select#daybox').select('15');
 
